@@ -3,143 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Commodum Copia</title>
+    <title>Commodum Copia - Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Commodum Copia</h1>
         <nav>
             <ul>
-                <li class="nav-item"><a href="#" id="product-icon" onclick="toggleProductList()">Producten</a></li>
-                <li class="nav-item"><a href="#" id="cart-icon" onclick="toggleCart()">Winkelwagen 🛒</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li style="margin-left: auto;"><a href="winkelwagen.html">Winkelwagen 🛒</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="welcome">
-            <h2>Welkom bij Commodum Copia</h2>
-            <p>De beste supermarkt voor al uw boodschappen!</p>
-            <img src="https://example.com/supermarket.jpg" alt="Supermarkt" class="supermarket-image" />
-        </section>
-
-        <section class="weekly-offers">
-            <h3>Aanbiedingen van de week</h3>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="https://example.com/apple.jpg" alt="Appel" />
-                    <h3>Appel</h3>
-                    <p>Prijs: <span class="discount-price">€0.80</span> <del>€1.00</del></p>
-                    <button onclick="addToCart('Appel', 0.80)">Voeg toe aan winkelwagentje</button>
-                </div>
-                <div class="product">
-                    <img src="https://example.com/banana.jpg" alt="Banaan" />
-                    <h3>Banaan</h3>
-                    <p>Prijs: <span class="discount-price">€0.40</span> <del>€0.50</del></p>
-                    <button onclick="addToCart('Banaan', 0.40)">Voeg toe aan winkelwagentje</button>
-                </div>
-                <div class="product">
-                    <img src="https://example.com/orange.jpg" alt="Sinaasappel" />
-                    <h3>Sinaasappel</h3>
-                    <p>Prijs: <span class="discount-price">€0.70</span> <del>€0.80</del></p>
-                    <button onclick="addToCart('Sinaasappel', 0.70)">Voeg toe aan winkelwagentje</button>
-                </div>
-                <div class="product">
-                    <img src="https://example.com/grapes.jpg" alt="Druiven" />
-                    <h3>Druiven</h3>
-                    <p>Prijs: <span class="discount-price">€1.00</span> <del>€1.20</del></p>
-                    <button onclick="addToCart('Druiven', 1.00)">Voeg toe aan winkelwagentje</button>
-                </div>
+        <h1>Welkom bij Commodum Copia</h1>
+        <p>De beste supermarkt voor al uw boodschappen!</p>
+        <img src="supermarkt.jpg" alt="Supermarkt afbeelding">
+        
+        <section>
+            <h2>Aanbiedingen van de week</h2>
+            <div class="product">
+                <h3>Biologische Appels</h3>
+                <p>Nu voor slechts €2.49 per kilo!</p>
+            </div>
+            <div class="product">
+                <h3>Bananen</h3>
+                <p>Verse bananen voor €1.29 per tros!</p>
             </div>
         </section>
-
-        <section class="contact">
-            <a class="contact-button" href="#">Contacteer ons</a>
-            <div class="social-media">
-                <a href="#"><img src="https://example.com/facebook-icon.png" alt="Facebook" /></a>
-                <a href="#"><img src="https://example.com/twitter-icon.png" alt="Twitter" /></a>
-                <a href="#"><img src="https://example.com/instagram-icon.png" alt="Instagram" /></a>
-            </div>
-        </section>
-
-        <div id="product-list" style="display: none;">
-            <div class="tabs">
-                <button onclick="showTab('meat')">Vlees</button>
-                <button onclick="showTab('dairy')">Zuivel</button>
-                <button onclick="showTab('bread')">Brood</button>
-                <button onclick="showTab('vegetables')">Groenten</button>
-                <button onclick="showTab('drinks')">Dranken</button>
-            </div>
-
-            <div id="meat" class="tab-content">
-                <h2>Vlees</h2>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="https://example.com/meat1.jpg" alt="Vlees Product 1" />
-                        <h3>Vlees Product 1</h3>
-                        <p>Prijs: €10.00</p>
-                        <button onclick="addToCart('Vlees Product 1', 10.00)">Voeg toe aan winkelwagentje</button>
-                    </div>
-                </div>
-            </div>
-
-            <div id="dairy" class="tab-content" style="display: none;">
-                <h2>Zuivel</h2>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="https://example.com/dairy1.jpg" alt="Melk" />
-                        <h3>Melk</h3>
-                        <p>Prijs: €1.50</p>
-                        <button onclick="addToCart('Melk', 1.50)">Voeg toe aan winkelwagentje</button>
-                    </div>
-                </div>
-            </div>
-
-            <div id="bread" class="tab-content" style="display: none;">
-                <h2>Brood</h2>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="https://example.com/bread1.jpg" alt="Brood" />
-                        <h3>Brood</h3>
-                        <p>Prijs: €2.00</p>
-                        <button onclick="addToCart('Brood', 2.00)">Voeg toe aan winkelwagentje</button>
-                    </div>
-                </div>
-            </div>
-
-            <div id="vegetables" class="tab-content" style="display: none;">
-                <h2>Groenten</h2>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="https://example.com/vegetable1.jpg" alt="Groente" />
-                        <h3>Groente</h3>
-                        <p>Prijs: €3.00</p>
-                        <button onclick="addToCart('Groente', 3.00)">Voeg toe aan winkelwagentje</button>
-                    </div>
-                </div>
-            </div>
-
-            <div id="drinks" class="tab-content" style="display: none;">
-                <h2>Dranken</h2>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="https://example.com/drink1.jpg" alt="Drank" />
-                        <h3>Drank</h3>
-                        <p>Prijs: €1.00</p>
-                        <button onclick="addToCart('Drank', 1.00)">Voeg toe aan winkelwagentje</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
 
-    <aside id="cart" style="display: none;">
-        <h2>Winkelwagentje</h2>
-        <ul id="cart-items"></ul>
-        <p>Totaal: €<span id="total-price">0.00</span></p>
-    </aside>
-
-    <script src="script.js"></script>
+    <footer>
+        <p>Contacteer ons</p>
+        <p>
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </p>
+        <p>&copy; 2025 Commodum Copia - Alle rechten voorbehouden.</p>
+    </footer>
 </body>
 </html>
