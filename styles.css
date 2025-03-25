@@ -1,23 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 10px 20px;
+}
+
 nav {
     display: flex;
-    justify-content: space-between; /* Verdelen van de elementen */
-    background-color: #f8f8f8; /* Achtergrondkleur */
-    padding: 10px 20px; /* Padding voor de balk */
+    justify-content: space-between;
 }
 
 ul {
-    list-style-type: none; /* Verwijder de punten */
-    margin: 0; /* Verwijder marges */
-    padding: 0; /* Verwijder padding */
-    display: flex; /* Gebruik flexbox voor het verdelen van elementen */
-    width: 100%; /* Volledige breedte */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 li {
-    margin: 0 15px; /* Marges tussen de elementen */
+    margin: 0 15px;
 }
 
 a {
-    text-decoration: none; /* Verwijder onderstreping */
-    color: #333; /* Tekstkleur */
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #f8f8f8;
 }
