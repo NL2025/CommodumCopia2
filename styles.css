@@ -1,46 +1,112 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
 }
 
 header {
-    background: #f8f8f8;
-    padding: 10px 20px;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-ul {
+nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center; /* Centreren van de elementen */
 }
 
-li {
-    margin: 0 15px;
+nav ul li {
+    padding: 10px 20px;
+    text-align: center;
 }
 
-a {
-    text-decoration: none;
-    color: #333;
+.welcome {
+    text-align: center;
+    margin: 20px 0;
 }
 
-main {
+.welcome h2 {
+    font-size: 24px;
+}
+
+.welcome p {
+    font-size: 16px;
+}
+
+.supermarket-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.weekly-offers {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.weekly-offers h3 {
+    font-size: 22px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
     padding: 20px;
 }
 
 .product {
     border: 1px solid #ccc;
     padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.discount-price {
+    color: red; /* Kleur voor de korting prijs */
+    font-weight: bold;
+}
+
+.contact {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #33b5e5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.social-media {
     margin: 10px 0;
 }
 
-footer {
-    text-align: center;
+.social-media img {
+    width: 30px; /* Grootte van de sociale media iconen */
+    margin: 0 5px;
+}
+
+aside {
+    border: 1px solid #ccc;
     padding: 10px;
-    background: #f8f8f8;
+    background-color: white;
+}
+
+.tab-content {
+    display: none;
 }
