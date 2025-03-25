@@ -66,6 +66,7 @@ function increaseQuantity(productName) {
         product.quantity++;
         totalPrice += product.price;
         updateCartDisplay();
+        localStorage.setItem('cart', JSON.stringify(cart)); // Update localStorage
     }
 }
 
@@ -79,10 +80,19 @@ function decreaseQuantity(productName) {
         } else {
             updateCartDisplay();
         }
+        localStorage.setItem('cart', JSON.stringify(cart)); // Update localStorage
     }
 }
 
 function removeFromCart(productName) {
     cart = cart.filter(item => item.name !== productName);
+    totalPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0); // Update totalPrice
     updateCartDisplay();
+    localStorage.setItem('cart', JSON.stringify(cart)); // Update localStorage
+}
+
+// إضافة دالة للدفع
+function checkout() {
+    alert(`Totaal te betalen: €${totalPrice.toFixed(2)}`);
+    // يمكنك إضافة منطق الدفع هنا
 }
