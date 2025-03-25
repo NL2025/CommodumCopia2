@@ -1,30 +1,20 @@
 [
     {
-        "product_id": 1,
         "naam": "Biologische Appels",
-        "prijs": "2.99",
-        "beschrijving": "Verse appels uit Nederland",
-        "afbeelding": "images/appels.jpg"
+        "beschrijving": "Verse biologische appels van de beste kwaliteit.",
+        "prijs": 2.49,
+        "afbeelding": "afbeeldingen/appels.jpg"
     },
     {
-        "product_id": 2,
         "naam": "Bananen",
-        "prijs": "1.49",
-        "beschrijving": "Heerlijke verse bananen",
-        "afbeelding": "images/bananen.jpg"
+        "beschrijving": "Verse bananen, perfect voor een snack.",
+        "prijs": 1.29,
+        "afbeelding": "afbeeldingen/bananen.jpg"
     },
     {
-        "product_id": 3,
-        "naam": "Sinaasappel",
-        "prijs": "1.29",
-        "beschrijving": "Verse sinaasappels",
-        "afbeelding": "images/sinaasappel.jpg"
-    },
-    {
-        "product_id": 4,
-        "naam": "Druiven",
-        "prijs": "1.99",
-        "beschrijving": "Zoete druiven",
-        "afbeelding": "images/druiven.jpg"
+        "naam": "Sinaasappels",
+        "beschrijving": "Zoete sinaasappels vol vitamine C.",
+        "prijs": 3.00,
+        "afbeelding": "afbeeldingen/sinaasappels.jpg"
     }
 ]
