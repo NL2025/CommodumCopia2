@@ -12,6 +12,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="producten.html">Producten</a></li>
+                <li><a href="#" id="cart-icon" onclick="toggleCart()">Winkelwagen 🛒</a></li>
             </ul>
         </nav>
     </header>
@@ -36,10 +37,27 @@
                 <p>Verse bananen voor €1.29 per tros!</p>
             </div>
         </section>
+
+        <section class="contact">
+            <h2>Contacteer ons</h2>
+            <div class="social-media">
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Commodum Copia - Alle rechten voorbehouden.</p>
     </footer>
+
+    <aside id="cart" style="display: none;">
+        <h2>Winkelwagentje</h2>
+        <ul id="cart-items"></ul>
+        <p>Totaal: €<span id="total-price">0.00</span></p>
+    </aside>
+
+    <script src="script.js"></script>
 </body>
 </html>
