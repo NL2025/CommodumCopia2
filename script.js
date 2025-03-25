@@ -1,5 +1,5 @@
-let cart = [];
-let totalPrice = 0;
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+let totalPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0);
 
 document.addEventListener("DOMContentLoaded", function() {
     // Load products on the product page
@@ -39,6 +39,7 @@ function addToCart(productName, productPrice) {
     }
     totalPrice += productPrice;
     updateCartDisplay();
+    localStorage.setItem('cart', JSON.stringify(cart)); // Save cart to localStorage
 }
 
 function updateCartDisplay() {
