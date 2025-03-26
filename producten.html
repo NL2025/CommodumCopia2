@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commodum Copia - Producten</title>
+    <title>Producten - Commodum Copia</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
+            <div class="logo">Commodum Copia</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li style="margin-left: auto;"><a href="winkelwagen.html">Winkelwagen 🛒</a></li>
+                <li><a href="producten.html">Producten</a></li>
+                <li><a href="winkelwagen.html">Winkelwagen</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Producten</h1>
-        <div id="product-list"></div>
+        <section class="producten-container">
+            <h1>Onze Producten</h1>
+            <div id="producten-grid" class="producten-grid">
+                <!-- Producten worden dynamisch geladen via JavaScript -->
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Commodum Copia - Alle rechten voorbehouden.</p>
+        <p>&copy; 2024 Commodum Copia. Alle rechten voorbehouden.</p>
     </footer>
 
     <script src="script.js"></script>
